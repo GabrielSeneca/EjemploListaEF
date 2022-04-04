@@ -23,9 +23,11 @@ namespace ListaEF
         {
             Product product = new Product
             {
-                ProductName = txtProduct.Text,
+                ProductName = txtProduct.Text
             };
+
             bd.Products.Add(product);
+
             if (bd.SaveChanges() > 0)
             {
                 MessageBox.Show("El Producto ha sido agregado");
@@ -34,6 +36,14 @@ namespace ListaEF
             {
                 MessageBox.Show("El Producto no pudo ser agregado");
             }
+
+            Erase();
+
+        }
+
+        private void Erase()
+        {
+            txtProduct.Text = "";
         }
 
         private void FormProducts_Load(object sender, EventArgs e)
