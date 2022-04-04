@@ -30,6 +30,7 @@ namespace ListaEF
 
             if (bd.SaveChanges() > 0)
             {
+                dgvProductos.DataSource = bd.Products.ToList(); //Actualiza la tabla en la misma aplicacion
                 MessageBox.Show("El Producto ha sido agregado exitosamente", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
