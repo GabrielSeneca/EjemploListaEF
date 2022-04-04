@@ -30,11 +30,11 @@ namespace ListaEF
 
             if (bd.SaveChanges() > 0)
             {
-                MessageBox.Show("El Producto ha sido agregado");
+                MessageBox.Show("El Producto ha sido agregado exitosamente", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("El Producto no pudo ser agregado");
+                MessageBox.Show("El Producto no pudo ser agregado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Erase();
