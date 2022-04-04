@@ -95,7 +95,7 @@
             this.dgvProductos.DataSource = this.productsBindingSource;
             this.dgvProductos.Location = new System.Drawing.Point(12, 96);
             this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.Size = new System.Drawing.Size(926, 150);
+            this.dgvProductos.Size = new System.Drawing.Size(926, 323);
             this.dgvProductos.TabIndex = 3;
             // 
             // northwindDataSet
